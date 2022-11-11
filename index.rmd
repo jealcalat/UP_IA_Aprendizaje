@@ -355,7 +355,7 @@ knitr::include_graphics("./images/neuron.png")
 --
 
 .pull-right[
-```{r pdp, fig.cap = "DL Bible", fig.align = "center", out.width='55%'}
+```{r pdp, fig.cap = "DL foundational books", fig.align = "center", out.width='55%'}
 knitr::include_graphics("./images/pdp.png")
 ```
 ]
