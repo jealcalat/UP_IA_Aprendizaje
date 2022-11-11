@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Inteligencia Artificial y   Principios del aprendizaje</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Emmanuel Alcalá" />
+    <script src="assets/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: title-slide middle center
+
+# Inteligencia Artificial y &lt;br/&gt; Principios del aprendizaje
+
+## 
+
+.author[
+Emmanuel Alcalá
+]
+
+&lt;img src="images/userlogo.png" class="user-logo" /&gt;
+
+
+
+
+
+
+---
+class: middle inverse
+
+.strong[
+  ¿Qué pensamos cuando escuchamos el término "Inteligencia Artificial"?
+]
+
+--
+
+- Probablemente solo en su rama aplicada: 
+
+.pull-left[
+&lt;div class="figure"&gt;
+&lt;img src="./images/self_driving.jpg" alt="Self-driving" width="80%" /&gt;
+&lt;p class="caption"&gt;Self-driving&lt;/p&gt;
+&lt;/div&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;div class="figure"&gt;
+&lt;img src="./images/dall_e.png" alt="DALL-E" width="100%" /&gt;
+&lt;p class="caption"&gt;DALL-E&lt;/p&gt;
+&lt;/div&gt;
+]
+
+---
+
+class: middle inverse
+
+- La IA tiene también una vertiente más científica, o de investigación, cuyo propósito principal es modelar y en ese sentido entender la cognición humana.
+
+--
+
+- Aunque no es tan conocido, esa vertiente ha sido influida por la psicología, especialmente la que investiga la percepción y el aprendizaje.
+
+--
+
+- Desde esta perspectiva, la psicología aún puede influir en la IA y de hecho transformarla.
+
+---
+class: middle
+
+## ¿Qué es la IA?
+
+- Una definición muy general de la IA es como el estudio de agentes que perciben su entorno y ejecutan acciones para alcanzar un objetivo.
+
+--
+
+- Uno de sus objetivos es la creación de máquinas o algoritmos cuyo comportamiento (y solo su comportamiento) sea indistinguible del de organismos inteligentes.
+
+--
+
+- Es decir, desde sus inicios, la IA se planteó crear agentes artificiales tan inteligentes o más que agentes naturales.
+
+--
+
+- Es natural plantearse la idea de que, para ese objetivo, se debería investigar primero a los agentes cuya inteligencia se quiere emular.
+
+---
+
+## Dos métodos de la IA:
+--
+
+.pull-left[
+&lt;div class="figure"&gt;
+&lt;img src="./images/anarchy_methods.png" alt="Anarquía de métodos" width="110%" /&gt;
+&lt;p class="caption"&gt;Anarquía de métodos&lt;/p&gt;
+&lt;/div&gt;
+]
+
+--
+
+.pull-right[
+- Simbólica: Fue el paradigma dominante en la IA de mediados de los 50s hasta los 80s (no ha desaparecido).
+
+- Subsimbólica: basada en aprendizaje. A su vez, una rama basada en estadística y otra (conexionista), en redes neurales.
+
+]
+
+---
+## La importancia del aprendizaje
+
+- El aprendizaje resuelve un problema importante. Si naciéramos con habilidades fijas e inmutables, no podríamos hacer frente a un mundo cambiante.
+
+--
+
+- Nos permite adaptarnos a situaciones muchas veces impredecibles:
+
+--
+  -	 En el tiempo (cuándo va a ocurrir)
+--
+
+  -  En el lugar (en dónde va a ocurrir)
+--
+
+  -  En relacion a otros eventos (¿qué tan probable es que llueva si está nublado?)
+
+---
+
+## ¿Cómo lo hacemos?
+
+--
+
+- La psicología y las neurociencias han estudiado y descubierto un conjunto de principios (mínimos) que todos los animales (e incluso bacterias) deben tener para poder adaptarse a situaciones cambiantes e inesperadas.
+
+--
+
+  - Sensores especializados, es decir, una forma de 'sentir' su entorno y diferenciar entre distintos tipos de señales (por ejemplo, calor de frío, luz de oscuridad, etc).
+
+--
+
+  - Una forma de responder diferente a diferentes eventos. Las formas más básicas son acercarse o alejarse (e.g., un pollito que se aproxima al calor pero se aleja del ruido). 
+
+---
+
+## Ejemplo: aprendizaje asociativo
+
+&lt;img src="./images/pavlov_conditioning.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+- Investigaciones como las de Pavlov llevaro a muchos a preguntarse lo siguiente:
+
+ .inverse[¿qué ocurre biológicamente cuando un animal experimenta algo, y la siguiente vez que lo experimenta responde diferente?].
+
+--
+
+- Algo tenía que *preservar* esa experiencia.
+
+--
+
+- En 1949, Donald Hebb, un psicólogo canadiense, respondió a esa pregunta:
+
+--
+
+&gt;«Cualquier par de células o sistemas de células que estén repetidamente activos al mismo tiempo tenderán a "asociarse" de modo que la actividad en una facilite la actividad en la otra.»
+
+--
+
+A esta forma de aprendizaje en IA se llamaría después "aprendizaje no supervisado", en donde no se predice nada ni se evalúa si se está bien o no.
+
+---
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="./images/hebb_conditioning.png" alt="Hebbian theory" width="60%" /&gt;
+&lt;p class="caption"&gt;Hebbian theory&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+## Modelando el cerebro: conexionismo
+
+--
+
+El *insight* de Hebb de que existen correlatos biológicos del aprendizaje y memoria fue revolucionario: permitió resumir resultados empíricos en un *principio*; este principio fue formalizado (matemáticamente).
+
+--
+
+Paralelamenente, la investigación en aprendizaje animal seguía progresando principalmente en dos áreas: condicionamiento pavloviano y condicionamiento instrumental.
+
+--
+
+Gran parte de esa investigación se resumía en la idea de que los animales podían aprender estructura ricas de información de su entorno, y *anticiparse* a eventos futuros.
+
+---
+class: middle
+
+.pull-left[
+&lt;img src="./images/nublado.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+--
+
+.pull-right[
+&lt;img src="./images/umbrella.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+class: inverse middle
+
+
+Es decir, podían hacer predicciones.
+
+--
+
+Pero si podían hacer predicciones, podían equivocarse: habría un *error de predicción*:
+
+$$
+error = \text{predicción} - \text{observación}
+$$
+
+--
+
+La siguiente vez que nuestro agente se encontrara con esta situación, tomaría en cuenta su error y realizaría ajustes.
+
+--
+
+&lt;img src="index_files/figure-html/rw-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## **Frank Rosenblatt** y el perceptrón
+
+Inspirándose en la fisiología de una neurona, Rosenblatt diseñó una estructura, a la que llamó *perceptrón*, que podía clasificar objetos aprendiendo por *reforzamiento* de muestras ya clasificadas.
+
+--
+
+También evaluó qué tan bien aprendía mediante un error de predicción, usando dos conjuntos de datos: *training* y *testing*. 
+
+--
+
+Esta forma de aprendizaje se llamaría posteriormente como "aprendizaje supervisado". 
+
+---
+class: middle
+
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="./images/perceptron.jpg" alt="Perceptron model" width="100%" /&gt;
+&lt;p class="caption"&gt;Perceptron model&lt;/p&gt;
+&lt;/div&gt;
+]
+
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="./images/neuron.png" alt="Neuron" width="100%" /&gt;
+&lt;p class="caption"&gt;Neuron&lt;/p&gt;
+&lt;/div&gt;
+]
+
+---
+
+## Decadencia del conexionismo y resurgimiento
+
+--
+
+.pull-left[
+- A finales de los 60s el interés por la IA subsimbólica descendió.
+
+- No fue hasta los 80s que volvió a resurgir por un grupo de psicólogos (!) de la universidad de California: PDP Group (*Parallel Distributed Processing*).
+
+- Fue el antecesor directo del DeepLearning.
+]
+
+--
+
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="./images/pdp.png" alt="DL Bible" width="55%" /&gt;
+&lt;p class="caption"&gt;DL Bible&lt;/p&gt;
+&lt;/div&gt;
+]
+
+---
+class: middle
+
+.strong[NETtalk, 1986]
+
+&lt;center&gt;
+  &lt;video width="70%" controls id="my_video"&gt;
+  &lt;source src="./images/NETtalk Test [gakJlr3GecE].mp4" type="video/mp4"&gt;
+  &lt;/video&gt;
+&lt;/center&gt;
+
+---
+
+## Quo vadis?
+
+- La filosofía subyacente al DeepLearning es un empiricismo fuerte: que podemos aprender casi cualquier cosa a partir de patrones estadísticos.
+
+--
+
+- Su abrumador éxito (que experimentamos todos los días) esconde algunas dificultades.
+
+--
+
+- Una es que exceden la habilidad humana en tareas específicas, pero fallan en generalizar sus habilidades fuera de los estrechos dominios en los que las aprendieron.
+
+--
+
+- Otra es que los humanos necesitamos *pocas muestras* para dominar una tarea (e.g., en niños aprendiendo a hablar).
+
+---
+class: middle
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="./images/human_vs_dl.png" alt="Human performance on Frosbite against two DL algorithms. From: Lake et al, Building machines that learn and think like poeple" width="60%" /&gt;
+&lt;p class="caption"&gt;Human performance on Frosbite against two DL algorithms. From: Lake et al, Building machines that learn and think like poeple&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+Diversos psicólogos, a caballo entre las ciencias cognitivas y la IA. coinciden en lo siguiente:
+
+--
+
+- La IA debe ser capaz de diseñar agentes que construyan modelos causales de su entorno que puedan ser explicados, en vez de solo resolver problemas de reconocimiento de patrones.
+
+--
+
+- Cimentar el aprendizaje en teorías intuitivas de la física y la psicología (i.e., dotarlos de "sentido común" para predecir eventos sobre colisiones, velocidades, permanencia de formas y número, estabilidad, etc).
+
+--
+
+- Explotar la habilidad de aprender a aprender para adquirir y rápidamente generalizar el conocimiento a nuevas tareas y situaciones, *fuera de las situaciones en las que aprendieron*.
+
+---
+class: middle inverse
+
+## Problemas éticos
+
+--
+
+- La IA tiene el potencial de transformar radicalmente nuestras concepciones de qué significa ser humano.
+
+--
+
+- Esto abre algunas cuestiones. Ahora no solo nos preguntamos si *es posible* crear inteligencia artificial general, sino *si deberíamos* hacerlo.
+
+---
+class: middle
+
+En mayo del 2014, Douglas Hofstadter y Melanie Mitchell, dos investigadores pioneros en cognición, computación, IA y sistemas complejos, visitaron las oficinas centrales de Google.
+
+--
+
+Melanie (en Artificial Intelligence. A guide for thinking humans) relata
+
+--
+
+«Las preocupaciones de Hofstadter fueron enfatizadas por el apoyo de Google [a la visión] de que la IA, facultada por su habilidad de automejora, alcanzará pronto, y luego a superar, inteligencia al nivel humano. Google, eso parecía, estaba haciendo todo para acelerarlo. "Estaba aterrorizado por los escenarios [dijo Hofstadter]. Estaríamos completamente fuera de guardia. Pensaremos que nada está pasando y, de repente, las computadoras serán más inteligentes que nosotros". Siguió "Me parece muy aterrador, muy preocupante, muy triste; y me parece terrible, horrible, extraño, desconcertante, que las personas se apresuren ciega y delirantemente a crear estas cosas."»
+
+---
+class: middle
+
+La preocupación de Hofstadter no era sobre la maldad o la pérdida de privacidad, cosas que por supuesto pueden ser preocupantes. 
+
+--
+
+Su preocupación era más trascendental: lo que más valoraba en la humanidad, como el Ulises de Joyce, la séptima de Beethoveen, el Oratorio de Navidad de Bach o Las Meninas de Velázquez, pináculos del «espíritu humano», pudiera ser reproducido y explicado por un algoritmo de fuerza bruta. 
+
+--
+
+&gt;«Si tales mentes de infinita sutilidad y complejidad y profundidad emocional pudieran ser trivializadas por un chip pequeño, destruiría mi sentido de lo que significa ser humano»
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="assets/remark-0.14.0.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "atom-one-light",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
